@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Login</title>
+</head>
+<body>
+    <div class="opacidade"></div>
+    <main>
+        <article>
+           
+            <div class="titulo">
+                <i class="fas fa-boxes"></i>
+                <h1> Gestão de estoque</h1>
+            </div>
+            <h2>Controle inteligente do seu negócio</h2>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Organize seu estoque de forma rápida e segura</li>
+                <li><i class="fas fa-robot"></i> Automação de operações diárias</li>
+                <li><i class="fas fa-chart-line"></i> Relatórios personalizados e intuitivos</li>
+                <li><i class="fas fa-mobile-alt"></i> Acesso de qualquer dispositivo</li>
+            </ul>
+        </article>
+
+        <form>
+            <h2>Acesse sua conta</h2>
+            <p>Gerencie seu estoque agora mesmo</p>
+
+            <div class="entrada-credenciais">
+                <label for="user">Usuário</label>
+                <div class="icon-input">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" required id="user" name="usuario" placeholder="Digite o Usuário">
+                </div>
+            </div>
+
+            <div class="entrada-credenciais">
+                <label for="password">Senha</label>
+                <div class="icon-input">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" required id="password" name="senha" placeholder="Digite a senha">
+                    <i class="fa-solid fa-eye toggle-password" id="olhar-senha"></i>
+                </div>
+            </div>
+
+            <div class="lembre-se">
+                <label>
+                    Lembre de mim
+                    <input type="checkbox" name="lembrar">
+                </label>
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+
+            <button type="submit"><i class="fa-solid fa-right-to-bracket"></i>Entrar</button>
+
+            <div class="cadastre-se">
+                <p>Não tem uma conta?<a href="#">Cadastre-se</a></p>
+            </div>
+
+        </form>
+    </main>
+    <script>
+        const olhar_senha = document.getElementById('olhar-senha');
+        const passwordInput = document.getElementById('password');
+      
+        olhar_senha.addEventListener('click', () => {
+          const isPassword = passwordInput.type === 'password';
+          passwordInput.type = isPassword ? 'text' : 'password';
+      
+          olhar_senha.classList.toggle('fa-eye');
+          olhar_senha.classList.toggle('fa-eye-slash');
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.opacidade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+body{
+    background-image: url(img/pexels-elevate-1267325.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*
+_______________________________________//Article
+*/
+article{
+    width: 490px;
+    height: 300px;
+    color: rgb(255, 255, 255);
+}
+
+article ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+article ul li{
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+article ul li i{
+    margin-right: 10px; 
+    font-size: 19px;
+    color: aqua; 
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulo h1{
+    font-size: 1.8em;;
+}
+
+.titulo i{
+    color: aqua;
+    font-size: 25px;
+}
+
+article h2{
+    font-size: 1.3em;
+    color: chocolate;
+    margin: 25px 0 25px 0;
+}
+/*
+_______________________________________//Formulário
+*/
+form{
+    background-color: white;
+    width: 370px;
+    height: 480px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px black;
+}
+
+form h2{
+    color: chocolate;
+}
+
+form p{
+    font-size: 0.8em;
+    margin: 25px 0 25px 0;
+}
+
+.entrada-credenciais{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.entrada-credenciais label{
+    margin-bottom: 8px;
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.entrada-credenciais input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    padding: 0 0 0 35px;
+    border: 1px solid rgba(80, 80, 80, 0.603);
+}
+
+.entrada-credenciais input:focus{
+    outline: none;
+    border: 1px solid darkorange;
+    transition: border 0.3s;
+}
+
+#olhar-senha{
+    position: absolute;
+    justify-content: end;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: rgb(123, 123, 123);
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+#olhar-senha:hover{
+    color: darkorange;
+}
+
+.icon-input{
+    display: flex;
+    position: relative;
+}
+
+.icon-input i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 12px;
+    font-size: 16px;
+    color: rgb(123, 123, 123);
+}
+
+.lembre-se input[type="checkbox"]{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid chocolate;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.lembre-se input[type="checkbox"]:checked{
+    background-color: darkorange;
+    border-color: darkorange;
+}
+
+.lembre-se input[type="checkbox"]::after {
+    content: "✔";
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.lembre-se input[type="checkbox"]:checked::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.lembre-se{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.lembre-se label{
+    font-size: .7em;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+}
+
+.lembre-se a{
+    color: chocolate;
+    font-size: .7em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+button{
+    width: 100%;
+    height: 38px;
+    color: white;
+    background-color: chocolate;
+    border: none;
+    border-radius: 5px;
+    font-size: .8em;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: darkorange;
+    cursor: pointer;
+}
+
+
+.cadastre-se p{
+    font-size: .7em;
+    text-align: center;
+}
+
+.cadastre-se a{
+    color: chocolate;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.lembre-se a:hover,
+.cadastre-se a:hover{
+    color: darkorange;
+}
