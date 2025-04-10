@@ -40,9 +40,13 @@ Página de login desenvolvida com **HTML5**, **CSS** e **Font Awesome**. Uma int
 - Git e GitHub
 
 ## 📌 Observações
-git
+
 - A imagem de fundo está em `img/pexels-elevate-1267325.jpg`. Sinta-se livre para substituir por outra imagem da sua preferência.
 - O formulário ainda não está conectado com backend — é apenas a interface.
+
+### 🖼️ Créditos das Imagens
+Imagem de [Freepik](https://www.freepik.com)
+
 
 ## 📄 Licença
 
