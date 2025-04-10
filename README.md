@@ -3,7 +3,7 @@
 
 Página de login desenvolvida com **HTML5**, **CSS** e **Font Awesome**. Uma interface de autenticação simples e profissional.
 
-![Preview da tela de login](img/pexels-elevate-1267325.jpg)
+![Preview da tela de login](img/Captura%20de%20tela%202025-04-10%20042710.png)
 
 ## ✨ Funcionalidades
 
@@ -38,10 +38,6 @@ Página de login desenvolvida com **HTML5**, **CSS** e **Font Awesome**. Uma int
 - CSS3
 - Font Awesome 6.4
 - Git e GitHub
-
-## 📸 Captura de Tela
-
-![Exemplo de interface](img/pexels-elevate-1267325.jpg)
 
 ## 📌 Observações
 git
